@@ -8,6 +8,9 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 public class Deals {
+	/*
+	 * This script will create a deal from stockist.
+	 */
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -73,14 +76,14 @@ public class Deals {
       }
   }
 
- /* @AfterClass(alwaysRun = true)
+ @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
     driver.quit();
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
       fail(verificationErrorString);
     }
-  }*/
+  }
 
   private boolean isElementPresent(By by) {
     try {
